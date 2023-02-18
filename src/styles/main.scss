@@ -2,6 +2,69 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cinzel", serif;
 }
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+
+  @include onTablet {
+    max-width: 600px;
+  }
+}
+
+.logo {
+  width: 64px;
+
+  @include onTablet {
+    width: 87px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include onTablet {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
