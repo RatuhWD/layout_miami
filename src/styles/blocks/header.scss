@@ -9,6 +9,10 @@
   &__container {
     padding-top: 25px;
     text-align: center;
+
+    @include onTablet {
+      padding-top: 50px;
+    }
   }
 
   &__top {

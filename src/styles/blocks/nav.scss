@@ -18,6 +18,10 @@
     padding-top: 25px;
 
     text-transform: uppercase;
+
+    @include onTablet {
+      padding-top: 50px;
+    }
   }
 
   &__top {
